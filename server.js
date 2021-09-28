@@ -1,5 +1,5 @@
 require("dotenv").config();
-import express from "express";
+const express=require(express);
 const morgan=require("morgan");
 const cors=require("cors");
 const db=require("./db/index");
@@ -44,3 +44,5 @@ app.get("/api/v1/restaurants/:id", async (req,res)=>{
         console.log(err);        
     }
 });
+
+//create a restaurant
