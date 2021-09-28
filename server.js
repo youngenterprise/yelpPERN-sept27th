@@ -1,6 +1,6 @@
 require("dotenv").config();
-const express=require(express);
 const morgan=require("morgan");
+const express=require("express");
 const cors=require("cors");
 const db=require("./db/index");
 
@@ -46,6 +46,9 @@ app.get("/api/v1/restaurants/:id", async (req,res)=>{
 });
 
 //create a restaurant
+
+
+
 
 const port =process.env.PORT || 3001;
 app.listen(port,()=>{
